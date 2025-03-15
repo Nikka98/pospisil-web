@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychologist - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #e3dedb;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #4a6c75;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        .active {
+            display: block;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Psychologická poradna PhDr. Mgr. Bc. Roman Pospíšil, Ph.D.</h1>
+        <img src="psychologist.jpg" alt="Psychologická poradna PhDr. Mgr. Bc. Roman Pospíšil, Ph.D.">
+        <p>
+            Vítejte v soukromé psychologické poradně!
+            Nabízím vám komplexní psychologické služby v příjemném a diskrétním prostředí v blízkosti centra města. S empatií, profesionalitou a individuálním přístupem vám pomohu na cestě k duševní rovnováze a osobnímu růstu. Mým cílem je pomoci vám lépe porozumět sobě samým, překonat životní výzvy a dosáhnout duševní pohody. Jsem tu pro vás v každé životní situaci, ať už procházíte náročným obdobím, potýkáte se např. s úzkostí či depresí, řešíte vztahové problémy nebo jen cítíte, že potřebujete změnu. Věřím, že každý člověk má v sobě potenciál k osobnímu růstu a překonání životních překážek. Kontaktujte mě ještě dnes a udělejte první krok k pozitivní změně ve Vašem životě.
+        </p>
+        <nav>
+            <a href="#" onclick="showTab('offerings')">Nabídka psychologických služeb</a>
+            <a href="#" onclick="showTab('about')">O mně</a>
+            <a href="#" onclick="showTab('reservation')">Objednání a ceník služeb</a>
+            <a href="#" onclick="showTab('contact')">Kontakt</a>
+        </nav>
+        <div id="offerings" class="content active">
+            <h2>Služby psychologické poradny</h2>
+            <ul>
+                <li>Individuální psychologické poradenství</li>
+                <li>Párové a rodinné poradenství</li>
+                <li>Kariérové poradenství </li>
+                <li>Psychologickou diagnostiku</li>
+                <li>Psychologické služby při výběrech zaměstnanců</li>
+                <li>Relaxační techniky a kognitivní tréning</li>
+                <li>Krizovou intervenci</li>
+                <li>Online konzultace</li>
+            </ul>
+            <h3>Psychologické poradenství</h3>
+            <p>Nabízím individuální, párové a rodinné poradenství zaměřené na řešení různých životních situací a psychických obtíží. Pomáhám s problémy jako jsou:</p>
+            <ul>
+                <li>Úzkosti, deprese,  </li>
+                <li>Traumata, panické ataky</li>
+                <li>Sebepoškozování</li>
+                <li>Nízké sebevědomí a sebedůvěra</li>
+                <li>Stres a vyhoření</li>
+                <li>Životní změny a krize</li>
+                <li>Vztahové problémy</li>
+                <li>Osobnostní rozvoj</li>
+            </ul>
+            <h3>Psychologická diagnostika</h3>
+            <p>Nabízím komplexní psychologickou diagnostika, která vám pomůže lépe porozumět vašim silným stránkám, výzvám a potenciálu. Pracuji s širokou škálou standardizovaných diagnostických metod a testů zahrnující:</p>
+            <ul>
+                <li>Osobnostní testy</li>
+                <li>Testy inteligence a kognitivních schopností</li>
+                <li>Kariérní testy a profesní diagnostiku</li>
+                <li>Metody s využitím biofeedbacku</li>
+            </ul>
+            <p>Na základě výsledků diagnostiky vám poskytnu doporučení pro další postup, ať už jde o terapii, tréning, kariérní rozvoj nebo vzdělávací strategie.</p>
+            <h3>Párové a rodinné poradenství</h3>
+            <p>Vztahy jsou základem našeho života, ale někdy mohou být zdrojem stresu a napětí. V prostředí poradny vám poskytnu bezpečné a neutrální prostředí, ve kterém můžete vyjádřit své pocity, potřeby, a společně pracovat na zlepšení vztahů. Cílem je:</p>
+            <ul>
+                <li>Zlepšit komunikaci mezi partnery nebo členy rodiny</li>
+                <li>Řešit konflikty konstruktivním způsobem</li>
+                <li>Obnovit důvěru a intimitu ve vztahu</li>
+                <li>Zvládat výchovné problémy</li>
+                <li>Přizpůsobit se změnám v rodinné dynamice (např. příchod dítěte, rozvod, úmrtí v rodině, osamostatnění se od rodiny)</li>
+            </ul>
+            <h3>Psychologické služby při výběrech zaměstnanců</h3>
+            <p>Nabízím vám komplexní psychologické služby při výběrech zaměstnanců na nejrůznější pracovní pozice. Tyto služby zahrnují několik oblastí, zejména pak psychometrické testování (kognitivní testy hodnotící inteligenci, verbální a numerické schopnosti; osobnostní testy zkoumající rysy a vlastnosti osobnosti v kontextu vhodnosti pro nabízenou pracovní pozici; testy integrity a motivace; týmových rolí apod.), strukturované rozhovory (návrh a vedení strukturovaných rozhovorů zaměřených na hodnocení kompetencí; behaviorální pohovory zkoumající minulé chování uchazečů apod.), Assessment centra (navrhování a realizace komplexních hodnotících center; simulace pracovních situací a úkolů pro posouzení schopností uchazečů),  analýza a interpretace výsledků psychologických testů a hodnocení, poskytování doporučení ohledně vhodnosti kandidátů včetně vypracování závěrečné zprávy pro zaměstnavatele. Tyto služby nabízím nejenom pro zaměstnavatele, ale také pro budoucí zaměstnance, studenty apod., kteří chtějí zjistit svůj potenciál a vhodnost pro nabízené pracovní pozice.</p>
+            <h3>Relaxační techniky a kognitivní tréning</h3>
+            <p>V dnešní hektické době je stále důležitější věnovat pozornost našemu duševnímu zdraví a kognitivním schopnostem. Zatímco relaxační techniky pomáhají snižovat stres a navozovat stav klidu (autogenní tréning, progresivní svalová relaxace, dechová cvičení, meditace atd.), kognitivní trénink posiluje naše mentální schopnosti a zlepšuje naše kognitivní funkce (myšlení, paměť, pozornost a koncentrace, řeč, exekutivní funkce, prostorová orientace, zrakově prostorové schopnosti, rychlost zpracování informací atd.). Ke své práci využívám také trénink koherence pomocí biofeedbacku (BFB) jako účinné techniky pro zlepšení psychofyziologické rovnováhy a celkového zdraví. Koherence v kontextu BFB označuje stav, kdy jsou srdce a mozek synchronizovány, což vede k optimálnímu fungování autonomního nervového systému. Diagnostika a trénink pomocí BFB přispívá pozitivně k poklesu deprese a úzkosti, zvládání stresu, poklesu únavy, zlepšení spánku, zlepšení schopnosti se soustředit, podpoře dětí s ADHD, zlepšení výkonu u manažerů a sportovců atd. Kombinací těchto metod a technik vám mohu pomoci přispět k celkovému zlepšení kvality života.</p>
+            <h3>Krizová intervence</h3>
+            <p>Cílem tohoto poradenství jsou intervence psychologa, které směřují k snížení intenzity krize u klientů, k obnovení jejich psychické rovnováhy, posílení copingových mechanismů, prevenci dlouhodobých negativních dopadů krize a podpoře návratu k běžnému fungování. Psychologická krizová intervence je časově omezená (obvykle 4-6 týdnů) a zaměřená na okamžitou stabilizaci a podporu adaptivního zvládání akutní krize. </p>
+            <h3>Online konzultace</h3>
+            <p>Je pochopitelné, že ne vždy je možné nebo pohodlné navštívit psychologickou poradnu osobně. Proto nabízím také formu online konzultací, které vám umožní:</p>
+            <ul>
+                <li>Flexibilitu v plánování sezení</li>
+                <li>Pohodlí z vašeho domova</li>
+                <li>Přístup k odborné pomoci bez ohledu na vaši lokalitu</li>
+                <li>Kontinuitu péče i v případě cestování nebo nemoci</li>
+            </ul>
+            <p>Kvalita a důvěrnost těchto služeb zůstává stejně vysoká jako při osobních sezeních.</p>
+        </div>
+        <div id="about" class="content">
+            <h2>O mně</h2>
+            <p>Absolvoval jsem magisterské studium jednooborové psychologie na Filozofické fakultě univerzity Palackého v Olomouci. Následně jsem složil rigorózní zkoušku v oboru psychologie a absolvoval doktorské studium v oboru pedagogická psychologie. Pracoval jsem v poradenských pracovištích nejrůznějších zaměstnavatelů a škol. Mými klienty byli zejména zaměstnanci a jejich rodinní příslušníci, studenti škol apod., kteří ke mně přicházeli s nejrůznějšími požadavky na řešení osobních a pracovních (studijních) problémů. Mám dlouholeté zkušenosti ze svého působení na školách jako školní psycholog (střední a vysoká škola). Dále mám za sebou bohatou praxi jako psycholog v bezpečnostních složkách (armáda, policie). V současné době spolupracuji s Městskou policií v Ostravě. Zabývám se dlouhodobě problematikou zvládání psychické zátěže a stresu a psychologií při výběrech zaměstnanců. Současně působím již téměř 20 let jako vysokoškolský pedagog primárně zaměřený na psychologii, ale také na řízení lidských zdrojů a komunikaci včetně komunikace při zdravotním postižení. Spolupracuji s organizacemi poskytujícími sociální a zdravotně sociální služby. Nabízím rovněž lektorské služby. Absolvoval jsem kurz Krizové intervence akreditovaný MPSV. Dále jsem absolvoval komplexní kurz v Biofeedbacku a Neurofeedbacku jako psychoterapeutické metodě v ABC institutu Československém pro výcvik v KBT (certifikovaný BCIA).</p>
+        </div>
+        <div id="reservation" class="content">
+            <h2>Objednání a ceník služeb</h2>
+            <h3>Objednání (rezervace) psychologických služeb</h3>
+            <p>Psychologické poradenství, diagnostiku nebo konzultaci je možné objednat (rezervovat) telefonicky: +420 776 394 642 nebo e-mailem: rmn.pospisil@seznam.cz Do emailu vždy prosím uvádějte své jméno, příjmení a telefonní číslo, na kterém Vás mohu zastihnout. Nezapomeňte uvést termín a čas, který by Vám vyhovoval. Já Vám termín a čas potvrdím nebo nabídnu jinou alternativu.</p>
+            <h3>Poskytované psychologické služby</h3>
+            <p>Psychologické poradenství (osobně nebo online) - trvá 50 minut. (vhodné pro dlouhodobější a systematickou práci s klientem) Psychologická diagnostika (osobně) - trvá 50, 100 nebo 150 minut. (Odborné posouzení psychického stavu, osobnosti nebo kognitivních schopností pomocí rozhovoru a testových metod). Vhodné pro hlubší pochopení obtíží a stanovení dalšího postupu). Psychologická konzultace (online) - trvá 30 minut (Krátké jednorázové nebo vstupní setkání zaměřené na orientační podporu, zhodnocení situace a doporučení dalšího postupu. Vhodné pro rychlé řešení konkrétního problému nebo jako úvod do další spolupráce).</p>
+            <h3>Ceník poskytovaných psychologických služeb</h3>
+            <table>
+                <tr>
+                    <th>Druhy služeb</th>
+                    <th>Cena</th>
+                    <th>Délka</th>
+                </tr>
+                <tr>
+                    <td>Psychologické poradenství (osobně nebo online)</td>
+                    <td>800 Kč</td>
+                    <td>50 minut</td>
+                </tr>
+                <tr>
+                    <td>Psychologická diagnostika (osobně)</td>
+                    <td>800/1600/2400 Kč</td>
+                    <td>50/100/150 minut</td>
+                </tr>
+                <tr>
+                    <td>Psychologická konzultace (online)</td>
+                    <td>450 Kč</td>
+                    <td>30 minut</td>
+                </tr>
+            </table>
+            <h3>Způsob platby</h3>
+            <p>V případě psychologického poradenství (online) nebo psychologické konzultace (online) je nutné provést platbu předem, a to převodem na účet číslo: 1452147083/0800. Jako variabilní symbol použijte datum a čas v následujícím formátu: ddmmhhhh, např. pokud jste objednáni na 17.06. na 14:00 hod., Váš variabilní symbol bude následující: 17061400; do zprávy pro příjemce uvádějte prosím heslo "ONLINE PORADENSTVÍ" nebo „ONLINE KONZULTACE“ podle zvoleného druhu služby. Potvrzenou rezervaci je možné zrušit bezplatně nejpozději 24 hod. před stanoveným termínem psychologického poradenství online nebo psychologické konzultace online. Eventuální platbu Vám v tomto případě vrátím nebo Vám ji převedu na jiný termín. Při zrušení rezervace méně než 24 hod. před stanoveným termínem platba propadá bez nároku na náhradu. V takovém případě si vyhrazuji právo termín psychologického poradenství online nebo psychologickou konzultaci přes Skype zrušit. V případě psychologického poradenství nebo psychologické diagnostiky za osobní účasti klienta v psychologické poradně, je platba možná buď v hotovosti nebo převodem na účet číslo: 1452147083/0800. Jako variabilní symbol použijte datum a čas v následujícím formátu: ddmmhhhh, např. pokud jste objednáni na 18.07. na 15:00 hod., Váš variabilní symbol bude následující: 18071500; do zprávy pro příjemce uvádějte prosím heslo "PORADNA OSOBNĚ" nebo „DIAGNOSTIKA OSOBNĚ“ podle zvoleného druhu služby. Pokud se platba převodem neobjeví na účtu před zahájením psychologického poradenství nebo psychologické diagnostiky, vyhrazuji si právo sezení zrušit.</p>
+        </div>
+        <div id="contact" class="content">
+            <h2>Kontakt</h2>
+            <b>PhDr. et Mgr. et Bc. Roman Pospíšil, Ph.D.</b>
+            <br>
+            <p>
+                Havlíčkovo nábřeží 2728/38
+                Moravská Ostrava
+                702 00 Ostrava
+                (budova Technoprojektu – Kancelářské centrum)
+                IČO 22570331
+                tel.: +420 776 394 642
+                e-mail: rmn.pospisil@seznam.cz
+                Skype: Roman Pospíšil
+                Hlavní vchod do psychologické poradny je z Havlíčkova nábřeží, vedoucí do haly s recepcí. Poradna se nachází ve 4. patře vpravo, kancelář č. 401. V případě nejasností se obracejte na recepci nebo volejte +420 776 394 642. Vjezd na parkoviště (z druhé strany budovy) je z ulice Matiční.
+                MHD: Most Pionýrů-Trolejbusy číslo: 104, 109, Autobusy číslo: 22, 29, 30, 99
+            </p>
+            <p>Vložit mapu místa…</p>
+        </div>
+    </div>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
